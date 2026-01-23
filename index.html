@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Visor 3D Camiseta</title>
+  <meta charset="UTF-8" />
+  <title>Camiseta 3D</title>
 
-  <!-- Model Viewer -->
   <script type="module"
-    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js">
   </script>
 
   <style>
     body {
       margin: 0;
       background: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      overflow: hidden;
     }
 
     model-viewer {
-      width: 600px;
-      height: 600px;
-      background-color: #f4f4f4;
+      width: 100vw;
+      height: 100vh;
+      background: #f4f4f4;
     }
   </style>
 </head>
@@ -34,19 +30,12 @@
 
     camera-controls
     auto-rotate
-    auto-rotate-delay="3000"
-
-    <!-- 🔧 CAMBIOS IMPORTANTES -->
-    environment-image="https://modelviewer.dev/shared-assets/environments/neutral.hdr"
-    tone-mapping="aces"
-    exposure="0.75"
-    shadow-intensity="0.15"
-
-    min-camera-orbit="auto 70deg auto"
-    max-camera-orbit="auto 85deg auto"
-
     interaction-prompt="auto"
-    ar
+
+    environment-image="https://modelviewer.dev/shared-assets/environments/studio_small_09.hdr"
+    tone-mapping="neutral"
+    exposure="0.70"
+    shadow-intensity="0.15"
   >
   </model-viewer>
 
