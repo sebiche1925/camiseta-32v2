@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Camiseta 3D</title>
+  <title>Visor 3D Camiseta</title>
 
   <!-- Model Viewer -->
   <script type="module"
@@ -36,8 +36,10 @@
     auto-rotate
     auto-rotate-delay="3000"
 
-    exposure="0.85"
-    tone-mapping="linear"
+    <!-- 🔧 CAMBIOS IMPORTANTES -->
+    environment-image="https://modelviewer.dev/shared-assets/environments/neutral.hdr"
+    tone-mapping="aces"
+    exposure="0.75"
     shadow-intensity="0.15"
 
     min-camera-orbit="auto 70deg auto"
